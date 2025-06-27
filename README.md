@@ -1,0 +1,2 @@
+# SMCS
+该项目是基于langchain4j和springboot框架开发的以mongodb和mysql为支持数据库的Ai医疗问诊助手系统。
