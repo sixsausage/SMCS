@@ -7,10 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大连理工AI智慧办诊助手</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* 添加退出按钮样式 */
+        .logout-btn {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .logout-btn:hover {
+            background-color: #d32f2f;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
 <div id="app"></div>
 <script type="module" src="/src/main.js"></script>
+<div id="app"></div>
+<!-- 添加退出按钮 -->
+<button class="logout-btn" title="退出登录" onclick="logout()">
+    <i class="fas fa-sign-out-alt"></i>
+</button>
 </body>
 </html>
